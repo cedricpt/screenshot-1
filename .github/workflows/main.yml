@@ -14,11 +14,11 @@ jobs:
     - name: screenshots
       uses: flameddd/screenshots-ci-action@v1.1.1
       with:
-        url: https://www.rtbf.be/info/
+        url: https://datastudio.google.com/embed/reporting/c14a5cfc-cab7-4812-848c-0369173148ab/page/ZwmOB
     - uses: actions/upload-artifact@v2
       with:
         name: Download-desktop-screenshots
-        path: screenshots/result.jpeg
+        path: screenshots
     - name: Commit files
       run: |
         git config --local user.email "actions@github.com"
