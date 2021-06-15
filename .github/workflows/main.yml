@@ -1,4 +1,4 @@
-name: screenshots ci actions
+name: screenshots
 on:
   push:
 
@@ -15,9 +15,10 @@ jobs:
       uses: flameddd/screenshots-ci-action@v1.1.1
       with:
         url: https://datastudio.google.com/embed/reporting/c14a5cfc-cab7-4812-848c-0369173148ab/page/ZwmOB
+        devices: iPad Pro
     - uses: actions/upload-artifact@v2
       with:
-        name: Download-desktop-screenshots
+        name: screen
         path: screenshots
     - name: Commit files
       run: |
