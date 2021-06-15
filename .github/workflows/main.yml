@@ -16,6 +16,7 @@ jobs:
       with:
         url: https://datastudio.google.com/embed/reporting/c14a5cfc-cab7-4812-848c-0369173148ab/page/ZwmOB
         devices: iPad Pro
+        noDesktop: true
     - uses: actions/upload-artifact@v2
       with:
         name: screen
