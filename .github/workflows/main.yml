@@ -2,6 +2,7 @@ name: screenshots
 on:
   schedule:
   - cron: "45 3 * * *"
+  - cron: "30 5 * * *"
 
 jobs:
   screenshots:
